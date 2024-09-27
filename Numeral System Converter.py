@@ -15,7 +15,8 @@ def convert_number(number, from_base, to_base):
         return hex(number).replace("0x", "").upper()
     elif to_base == 10:
         return str(number)
-
+    else:
+        return "Неизвестная система счисления"
 
 # Функция для отображения меню и получения данных от пользователя
 def main():
@@ -39,3 +40,7 @@ def main():
 
     # Выводим результат
     print(f"Результат перевода: {result}")
+
+
+if __name__ == "__main__":
+    main()
